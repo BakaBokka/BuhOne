@@ -49,7 +49,7 @@ function Clients({ clients }) {
     </SwiperSlide>
   ));
   return (
-    <section className="Clients">
+    <section className="Clients" id="anc3">
       <div className="Clients__content">
         <SectionTitle text={"Наши клиенты"} />
         <SectionSubtitle text={"С нами работают"} style={subtitleStyles} />

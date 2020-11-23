@@ -28,7 +28,7 @@ function Hero() {
   }
 
   return (
-    <section className="Hero">
+    <section className="Hero" id="anc1">
       <div className="Hero__content">
         <h1 className="Hero__title">Бухгалтерские услуги в Санкт-Петербурге</h1>
         <Slider slides={slides} slidesPerView={1} breakpoints={breakpoints} />

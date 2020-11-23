@@ -5,7 +5,7 @@ import AboutGrid from "../AboutGrid/AboutGrid";
 
 function About({ cards }) {
   return (
-    <section className="About">
+    <section className="About" id="anc4">
       <div className="About__content">
         <div className="About__info">
           <SectionTitle text={"О нас"} />

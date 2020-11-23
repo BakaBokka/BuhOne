@@ -41,27 +41,27 @@ function Header() {
           </ul>
           <ul className="Header__menu">
             <li className="Header__menu-item">
-              <a href="#r" className="Header__menu-link">
+              <a href="#anc1" className="Header__menu-link">
                 Главная
               </a>
             </li>
             <li className="Header__menu-item">
-              <a href="#r" className="Header__menu-link">
+              <a href="#anc2" className="Header__menu-link">
                 услуги
               </a>
             </li>
             <li className="Header__menu-item">
-              <a href="#r" className="Header__menu-link">
+              <a href="#anc3" className="Header__menu-link">
                 кейсы
               </a>
             </li>
             <li className="Header__menu-item">
-              <a href="#r" className="Header__menu-link">
+              <a href="#anc4" className="Header__menu-link">
                 о компании
               </a>
             </li>
             <li className="Header__menu-item">
-              <a href="#r" className="Header__menu-link">
+              <a href="#anc5" className="Header__menu-link">
                 контакты
               </a>
             </li>

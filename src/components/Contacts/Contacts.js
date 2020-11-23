@@ -7,7 +7,7 @@ import ContactForm from "../ContactForm/ContactForm";
 
 function Contacts() {
   return (
-    <section className="Contacts">
+    <section className="Contacts" id="anc5">
       <div className="Contacts__content">
         <div className="Contacts__container">
           <div className="Contacts__info">
