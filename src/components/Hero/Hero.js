@@ -9,11 +9,6 @@ function Hero() {
     marginBottom: "120px",
   };
 
-  const sliderStyles = {
-    backgroundColor: "rgba(0, 95, 163, 0.2);",
-  };
-
-
   const breakpoints = {};
 
   //Массив во слайдами
@@ -32,7 +27,6 @@ function Hero() {
       <div className="Hero__content">
         <h1 className="Hero__title">Бухгалтерские услуги в Санкт-Петербурге</h1>
         <Slider slides={slides} slidesPerView={1} breakpoints={breakpoints} />
-
       </div>
     </section>
   );
