@@ -24,11 +24,15 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 19px;
-
     text-decoration: none;
-
     color: #000;
+    transition-duration: .6s;
+
+  &:hover {
+    color: rgb(165, 165, 165);
   }
+  }
+
 }
 
 

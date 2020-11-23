@@ -4,7 +4,7 @@ function Footer() {
   return (
     <section className="Footer">
       <div className="Footer__content">
-        <p className="Footer__copy">2019 (с) Все права защищены. БухОне.ру</p>
+        <p className="Footer__copy">2020 (с) Все права защищены. БухОне.ру</p>
         <a
           href="https://github.com/BakaBokka"
           className="Footer__developer"

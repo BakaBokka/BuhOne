@@ -11,8 +11,44 @@
   &:hover {
     background-color: #005fa3;
   }
-}
 
+
+  &_hero {
+    position: absolute;
+    // top: 50%;
+    bottom: 0;
+
+    width: 60px;
+    height: 60px;
+    background-color: rgba( 255, 255, 255, 0.2);
+    margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color, var(--swiper-theme-color));
+    transition-duration: .6s;
+    &.swiper-button-disabled {
+      opacity: 0.35;
+      cursor: auto;
+      pointer-events: none;
+    }
+    &:after {
+      font-family: swiper-icons;
+      font-size: var(--swiper-navigation-size);
+      text-transform: none !important;
+      letter-spacing: 0;
+      text-transform: none;
+      font-variant: initial;
+      line-height: 1;
+    }
+
+    &:hover{
+      background-color: rgba( 255, 255, 255, 0.4);
+    }
+}
+}
 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
@@ -41,3 +77,5 @@
     align-items: center;
   }
 }
+
+

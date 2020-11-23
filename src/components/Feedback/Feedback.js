@@ -13,6 +13,8 @@ function Feedback({ feedback }) {
     marginBottom: "80px",
   };
 
+  const breakpoints = {};
+
   const slides = feedback.map((feedback) => (
     <SwiperSlide key={feedback.id}>
       <FeedbackSlide
@@ -28,7 +30,7 @@ function Feedback({ feedback }) {
       <div className="Feedback__content">
         <SectionTitle text={"Отзывы"} />
         <SectionSubtitle text={"Ваши благодарности"} style={subtitleStyles} />
-        <Slider slides={slides}  spaceBetween={0} slidesPerView={1}/>
+        <Slider slides={slides} slidesPerView={1} breakpoints={breakpoints} />
       </div>
     </section>
   );

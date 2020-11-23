@@ -8,17 +8,16 @@ import "./Slider.scss";
 
 SwiperCore.use([Navigation, Pagination]);
 
-function Slider({ slides, spaceBetween, slidesPerView }) {
+function Slider({ slides, slidesPerView, breakpoints }) {
   return (
     <Swiper
-      spaceBetween={spaceBetween}
       slidesPerView={slidesPerView}
       pagination={{ clickable: true }}
-      navigation
-      loop
-      // centeredSlides
-      // slidesPerGroup= {3}
 
+      loop
+      breakpoints={breakpoints}
+      navigation
+      
     >
       {slides}
     </Swiper>

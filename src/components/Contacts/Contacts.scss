@@ -18,7 +18,7 @@
     color: #fff;
   }
 
-  &__container{
+  &__container {
     display: flex;
     justify-content: space-between;
     margin: 0 0 50px;
@@ -68,14 +68,18 @@
     font-weight: 300;
     font-size: 21px;
     line-height: 29px;
-    color: #ffffff;
+    color: #fff;
+    transition-duration: 0.6s;
+
+    &:hover {
+      color: #b4b4b4;
+    }
   }
 
   &__list-ico {
     margin-right: 15px;
   }
 }
-
 
 @media (max-width: 1600px) {
   .Contacts {
@@ -85,9 +89,6 @@
 
     &__text {
       margin: 0 0 50px;
-      font-weight: 300;
-      font-size: 18px;
-      line-height: 25px;
     }
 
     &__list {
@@ -104,20 +105,14 @@
       }
     }
     &__list-link {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      font-weight: 300;
       font-size: 16px;
       line-height: 24px;
-      color: #ffffff;
     }
 
     &__list-ico {
       margin-right: 10px;
     }
   }
-
 }
 
 @media (max-width: 1080px) {
@@ -127,19 +122,17 @@
       width: 100%;
       padding: 90px 0 110px;
       align-items: flex-start;
-
     }
 
     &__title {
       max-width: 590px;
       margin: 0 0 30px;
 
-
       font-size: 36px;
       line-height: 48px;
     }
 
-    &__container{
+    &__container {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -154,16 +147,30 @@
       justify-content: space-between;
       text-align: left;
     }
+
+    &__list-item {
+      margin: 0 115px 0 0px;
+      &:last-of-type {
+        margin: 0;
+      }
+    }
   }
 }
 
 @media (max-width: 480px) {
   .Contacts {
+    &__content {
+      align-items: center;
+    }
+
+    &__info {
+      align-items: center;
+    }
     &__title {
-    margin: 0 0 20px;
-    font-size: 28px;
-    line-height: 38px;
-    text-align: center;
+      margin: 0 0 20px;
+      font-size: 28px;
+      line-height: 38px;
+      text-align: center;
     }
 
     &__list {
@@ -174,12 +181,17 @@
       list-style: none;
     }
 
-
     &__list-item {
-      margin: 0 0 20px;
+      margin: 0 0 30px;
       &:last-of-type {
         margin: 0;
       }
+    }
+
+    &__list-link {
+      font-weight: 300;
+      font-size: 21px;
+      line-height: 29px;
     }
   }
 }

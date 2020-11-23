@@ -13,6 +13,34 @@ function Clients({ clients }) {
     marginBottom: "80px",
   };
 
+
+
+
+  const breakpoints = {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+    },
+
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 2,
+    },
+    // when window width is >= 768px
+    1080: {
+      // width: 1080,
+
+      slidesPerView: 3,
+    },
+    1600: {
+      // width: 1600,
+
+      slidesPerView: 4,
+    },
+
+
+  }
+
   const slides = clients.map((client) => (
     <SwiperSlide  key={client.id} >
 
@@ -25,7 +53,7 @@ function Clients({ clients }) {
       <div className="Clients__content">
         <SectionTitle text={"Наши клиенты"} />
         <SectionSubtitle text={"С нами работают"} style={subtitleStyles} />
-        <Slider slides={slides} spaceBetween={30} slidesPerView={4} />
+        <Slider slides={slides}  slidesPerView={4} breakpoints={breakpoints} />
       </div>
     </section>
   );

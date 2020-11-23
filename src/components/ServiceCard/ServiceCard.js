@@ -7,7 +7,6 @@ function ServiceCard({ text, style, link }) {
 
   const handleHoverOn = () => {
     setHover(true);
-    console.log("hover");
   };
 
   const handleHoverOff = () => {
@@ -23,10 +22,7 @@ function ServiceCard({ text, style, link }) {
       onMouseOver={handleHoverOn}
       onMouseOut={handleHoverOff}
     >
-      <a
-        className="ServiceCard__link"
-        href={link}
-      >
+      <a className="ServiceCard__link" href={link}>
         <h3 className="ServiceCard__title">{text}</h3>
       </a>
     </li>

@@ -17,17 +17,11 @@ const validate = (values) => {
     errors.lastName = "Ой, больше 20 символов нельзя";
   }
 
-  if (!values.message) {
-    errors.message = "Это обязательное поле";
-  } else if (values.message.length > 100) {
-    errors.message = "Ой, больше 100 символов нельзя";
+  if (!values.userMessage) {
+    errors.userMessage = "Это обязательное поле";
+  } else if (!/^[а-яА-ЯёЁa-zA-Z0-9\s]+$/i.test(values.userMessage)) {
+    errors.userMessage = "Только буквы или цифры, пожалуйста";
   }
-  else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.message)) {
-    errors.message = 'Invalid message address';
-  }
-  // else if (!/^[а-яА-ЯёЁa-zA-Z0-9]+$/i.test(values.message)) {
-  //   errors.message = "Только буквы или цифры, пожалуйста";
-  // }
 
   return errors;
 };
@@ -37,16 +31,16 @@ const ContactForm = () => {
     initialValues: {
       firstName: "Иван",
       lastName: "Иванов",
-      message: "Ваше сообщение",
+      userMessage: "Ваше сообщение",
     },
     validate,
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
-    },    
+      // alert(JSON.stringify(values, null, 2));
+    },
   });
   return (
     <form className="ContactForm__form" onSubmit={formik.handleSubmit}>
-      <div className="ContactFrom__content">
+      <div className="ContactForm__content">
         <div className="ContactForm__container">
           <div className="ContactForm__inputs">
             <label className="ContactForm__label" htmlFor="firstName">
@@ -88,20 +82,22 @@ const ContactForm = () => {
           </div>
         </div>
 
-        <label className="ContactForm__label" htmlFor="message">
+        <label className="ContactForm__label" htmlFor="userMessage">
           Сообщение
         </label>
         <textarea
           className="ContactForm__textarea"
-          id="message"
-          name="message"
+          id="userMessage"
+          name="userMessage"
+          type="text"
           onChange={formik.handleChange}
-          value={formik.values.message}
+          value={formik.values.userMessage}
           maxLength="101"
-          // pattern="!/^[а-яА-ЯёЁa-zA-Z0-9]+$/i"
         />
-        <div className="ContactForm__error">
-          {formik.errors.message ? <>{formik.errors.message}</> : null}
+        <div className="ContactForm__error ContactForm__error_textarea">
+          {formik.errors.userMessage ? (
+            <div>{formik.errors.userMessage}</div>
+          ) : null}
         </div>
       </div>
     </form>

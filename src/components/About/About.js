@@ -1,5 +1,5 @@
 import "./About.scss";
-import SectionSubtitle from "../SectionSubtitle/SectionSubtitle";
+
 import SectionTitle from "../SectionTitle/SectionTitle";
 import AboutGrid from "../AboutGrid/AboutGrid";
 
