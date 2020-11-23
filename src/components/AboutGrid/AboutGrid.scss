@@ -1,0 +1,23 @@
+.AboutGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 255px);
+  gap: 30px;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+  .AboutGrid {
+    gap: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .AboutGrid {
+    grid-template-columns: 1fr;
+  }
+}

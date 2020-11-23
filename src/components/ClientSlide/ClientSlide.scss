@@ -1,0 +1,12 @@
+.ClientSlide {
+  max-width: 255px;
+  width: 100%;
+  margin-bottom: 100px;
+  transition-duration: .6s;
+  // margin-right: 30px;
+  &:hover {
+    opacity: .6;
+  }
+
+
+}

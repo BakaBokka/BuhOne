@@ -1,0 +1,38 @@
+.Service {
+  display: flex;
+  background-color: #ebebeb;
+  justify-content: center;
+  align-items: center;
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 58.125%;
+    width: 100%;
+    padding: 140px 0 132px;
+    box-sizing: border-box;
+  }
+}
+
+
+@media (max-width: 1600px) {
+  .Service {
+    &__content {
+      max-width: 70%;
+    }
+  }
+}
+
+
+@media(max-width: 1080px) {
+  .Service {
+
+    &__content {
+      max-width: 90%;
+      width: 100%;
+      padding: 120px 0 90px;
+
+    }
+
+  }
+}
