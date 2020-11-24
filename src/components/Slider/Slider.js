@@ -8,16 +8,16 @@ import "./Slider.scss";
 
 SwiperCore.use([Navigation, Pagination]);
 
-function Slider({ slides, slidesPerView, breakpoints }) {
+function Slider({ slides, slidesPerView, breakpoints, tag, heroClassname}) {
   return (
     <Swiper
       slidesPerView={slidesPerView}
       pagination={{ clickable: true }}
-
       loop
       breakpoints={breakpoints}
       navigation
-      
+      tag={tag}
+      className={heroClassname}
     >
       {slides}
     </Swiper>

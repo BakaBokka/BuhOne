@@ -16,7 +16,7 @@ function Feedback({ feedback }) {
   const breakpoints = {};
 
   const slides = feedback.map((feedback) => (
-    <SwiperSlide key={feedback.id}>
+    <SwiperSlide key={feedback.id} tag={"li"}>
       <FeedbackSlide
         ava={feedback.ava}
         text={feedback.text}
@@ -30,7 +30,7 @@ function Feedback({ feedback }) {
       <div className="Feedback__content">
         <SectionTitle text={"Отзывы"} />
         <SectionSubtitle text={"Ваши благодарности"} style={subtitleStyles} />
-        <Slider slides={slides} slidesPerView={1} breakpoints={breakpoints} />
+        <Slider slides={slides} slidesPerView={1} breakpoints={breakpoints} tag={"ul"}/>
       </div>
     </section>
   );

@@ -9,13 +9,15 @@ function Hero() {
     marginBottom: "120px",
   };
 
+  const heroClassname = "swiper-hero";
+
   const breakpoints = {};
 
   //Массив во слайдами
   const slides = [];
   for (let i = 0; i < 4; i++) {
     slides.push(
-      <SwiperSlide key={i}>
+      <SwiperSlide key={i} tag={"li"}>
         <Button text={"Наша презентация"} style={buttonStyle} />
         ...
       </SwiperSlide>
@@ -26,7 +28,7 @@ function Hero() {
     <section className="Hero" id="anc1">
       <div className="Hero__content">
         <h1 className="Hero__title">Бухгалтерские услуги в Санкт-Петербурге</h1>
-        <Slider slides={slides} slidesPerView={1} breakpoints={breakpoints} />
+        <Slider slides={slides} slidesPerView={1} breakpoints={breakpoints} tag={"ul"} heroClassname={heroClassname} />
       </div>
     </section>
   );

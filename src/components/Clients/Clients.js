@@ -42,7 +42,7 @@ function Clients({ clients }) {
   }
 
   const slides = clients.map((client) => (
-    <SwiperSlide  key={client.id} >
+    <SwiperSlide  key={client.id} tag={"li"} >
 
 
       <ClientSlide logo={client.logo} url={client.url}/>
@@ -53,7 +53,7 @@ function Clients({ clients }) {
       <div className="Clients__content">
         <SectionTitle text={"Наши клиенты"} />
         <SectionSubtitle text={"С нами работают"} style={subtitleStyles} />
-        <Slider slides={slides}  slidesPerView={4} breakpoints={breakpoints} />
+        <Slider slides={slides}  slidesPerView={4} breakpoints={breakpoints} tag={"ul"} />
       </div>
     </section>
   );
