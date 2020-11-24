@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/BuhOne/static/css/main.615bfeb8.chunk.css",
-    "main.js": "/BuhOne/static/js/main.78787839.chunk.js",
-    "main.js.map": "/BuhOne/static/js/main.78787839.chunk.js.map",
+    "main.css": "/BuhOne/static/css/main.6753c606.chunk.css",
+    "main.js": "/BuhOne/static/js/main.e083d074.chunk.js",
+    "main.js.map": "/BuhOne/static/js/main.e083d074.chunk.js.map",
     "runtime-main.js": "/BuhOne/static/js/runtime-main.7cad7767.js",
     "runtime-main.js.map": "/BuhOne/static/js/runtime-main.7cad7767.js.map",
     "static/css/2.2ad6d091.chunk.css": "/BuhOne/static/css/2.2ad6d091.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.58bbc7fb.chunk.js.map": "/BuhOne/static/js/3.58bbc7fb.chunk.js.map",
     "index.html": "/BuhOne/index.html",
     "static/css/2.2ad6d091.chunk.css.map": "/BuhOne/static/css/2.2ad6d091.chunk.css.map",
-    "static/css/main.615bfeb8.chunk.css.map": "/BuhOne/static/css/main.615bfeb8.chunk.css.map",
+    "static/css/main.6753c606.chunk.css.map": "/BuhOne/static/css/main.6753c606.chunk.css.map",
     "static/js/2.e800f179.chunk.js.LICENSE.txt": "/BuhOne/static/js/2.e800f179.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/BuhOne/static/media/Merriweather-Bold.ce179342.woff",
     "static/media/Hero.scss": "/BuhOne/static/media/backpic.510834fb.jpg",
@@ -25,7 +25,7 @@
     "static/js/runtime-main.7cad7767.js",
     "static/css/2.2ad6d091.chunk.css",
     "static/js/2.e800f179.chunk.js",
-    "static/css/main.615bfeb8.chunk.css",
-    "static/js/main.78787839.chunk.js"
+    "static/css/main.6753c606.chunk.css",
+    "static/js/main.e083d074.chunk.js"
   ]
 }
