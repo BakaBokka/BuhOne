@@ -71,6 +71,10 @@
       outline: none;
       border-bottom: 1px solid #005fa3;
     }
+
+    &_invalid {
+      border-bottom: 1px solid rgb(235, 73, 73);
+    }
   }
 
   &__textarea {
@@ -96,6 +100,10 @@
       border-bottom: 1px solid #005fa3;
     }
   }
+}
+
+.invalid {
+  border-bottom: 1px solid rgb(235, 73, 73);
 }
 
 @media (max-width: 1080px) {
