@@ -29,6 +29,8 @@ const validate = (values) => {
     errors.userMessage = "Это обязательное поле";
   } else if (!/^[а-яА-ЯёЁa-zA-Z0-9\s]+$/i.test(values.userMessage)) {
     errors.userMessage = "Только буквы или цифры, пожалуйста";
+  }else if (values.userMessage.length > 100) {
+    errors.userMessage = "Ой, больше 100 символов нельзя";
   }
 
   return errors;
