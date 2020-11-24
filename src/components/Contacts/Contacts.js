@@ -1,4 +1,3 @@
-import Button from "../Button/Button";
 import phone from "../../images/whitephone-ico.svg";
 import mail from "../../images/whitemail-ico.svg";
 import "./Contacts.scss";
@@ -44,8 +43,6 @@ function Contacts() {
           </div>
           <ContactForm />
         </div>
-
-        <Button text={"Отправить сообщение"} />
       </div>
     </section>
   );

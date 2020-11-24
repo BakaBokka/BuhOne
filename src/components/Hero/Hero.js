@@ -16,7 +16,7 @@ function Hero() {
   for (let i = 0; i < 4; i++) {
     slides.push(
       <SwiperSlide key={i}>
-        <Button text={"Наша презентация"} margin={buttonStyle} />
+        <Button text={"Наша презентация"} style={buttonStyle} />
         ...
       </SwiperSlide>
     );

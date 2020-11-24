@@ -1,8 +1,8 @@
 import "./Button.scss";
 
-function Button({text, margin}) {
+function Button({text, style}) {
 
-return <button className="Button" style={margin}>{text}</button>;
+return <button className="Button" type="submit" style={style}>{text}</button>;
 }
 
 export default Button;

@@ -1,6 +1,14 @@
 import React from "react";
+import Button from "../Button/Button";
 import { useFormik } from "formik";
 import "./ContactForm.scss";
+
+//Стили для кнопки
+const buttonStyle = {
+  position: " absolute",
+  bottom: "-110px",
+  right: "0",
+};
 
 //Валидация
 const validate = (values) => {
@@ -29,13 +37,13 @@ const validate = (values) => {
 const ContactForm = () => {
   const formik = useFormik({
     initialValues: {
-      firstName: "Иван",
-      lastName: "Иванов",
-      userMessage: "Ваше сообщение",
+      firstName: "",
+      lastName: "",
+      userMessage: "",
     },
     validate,
     onSubmit: (values) => {
-      // alert(JSON.stringify(values, null, 2));
+      alert(JSON.stringify(values, null, 2));
     },
   });
   return (
@@ -54,6 +62,7 @@ const ContactForm = () => {
               onChange={formik.handleChange}
               value={formik.values.firstName}
               maxLength="21"
+              placeholder="Иван"
             />
             <div className="ContactForm__error">
               {formik.errors.firstName ? (
@@ -73,6 +82,7 @@ const ContactForm = () => {
               onChange={formik.handleChange}
               value={formik.values.lastName}
               maxLength="21"
+              placeholder="Иванов"
             />
             <div className="ContactForm__error">
               {formik.errors.lastName ? (
@@ -93,6 +103,7 @@ const ContactForm = () => {
           onChange={formik.handleChange}
           value={formik.values.userMessage}
           maxLength="101"
+          placeholder="Ваше сообщение"
         />
         <div className="ContactForm__error ContactForm__error_textarea">
           {formik.errors.userMessage ? (
@@ -100,6 +111,7 @@ const ContactForm = () => {
           ) : null}
         </div>
       </div>
+      <Button className="ContactForm__button" text={"Отправить сообщение"} style={buttonStyle}/>
     </form>
   );
 };
